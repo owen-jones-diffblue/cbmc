@@ -227,6 +227,8 @@ public:
     const irep_idt &function_id,
     symbol_table_baset &symbol_table) override;
 
+  const select_pointer_typet &get_pointer_type_selector() const;
+
 protected:
   void convert_single_method(
     const irep_idt &function_id,
@@ -246,7 +248,6 @@ protected:
     lazy_class_to_declared_symbols_mapt &class_to_declared_symbols);
 
   bool do_ci_lazy_method_conversion(symbol_tablet &);
-  const select_pointer_typet &get_pointer_type_selector() const;
 
   bool language_options_initialized;
   irep_idt main_class;
