@@ -55,4 +55,9 @@ void java_bytecode_convert_method_lazy(
   symbol_tablet &symbol_table,
   message_handlert &);
 
+void assign_parameter_names(
+  java_method_typet &ftype,
+  const irep_idt &name_prefix,
+  symbol_table_baset &symbol_table);
+
 #endif // CPROVER_JAVA_BYTECODE_JAVA_BYTECODE_CONVERT_METHOD_H

@@ -64,7 +64,7 @@ Author: Daniel Kroening, kroening@kroening.com
 /// \return Assigns parameter names (side-effects on `ftype`) to function stub
 ///   parameters, which are initially nameless as method conversion hasn't
 ///   happened. Also creates symbols in `symbol_table`.
-static void assign_parameter_names(
+void assign_parameter_names(
   java_method_typet &ftype,
   const irep_idt &name_prefix,
   symbol_table_baset &symbol_table)
